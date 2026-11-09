@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <title>Задание 4</title>
+
+    <!-- Подключение Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Подключение css -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!-- Шапка -->
+
+    <header class="bg-dark text-white">
+        <div class="container">
+
+            <div class="row align-items-center py-3">
+
+                <!-- Логотип -->
+
+                <div class="col-12 col-md-2 text-center mb-3 mb-md-0">
+
+                    <a href="index.html">
+
+                        <img src="doroga_razmetka_dal_167834_2560x1600.jpg"
+                             class="logo"
+                             alt="Логотип">
+
+                    </a>
+
+                </div>
+
+                <!-- Название сайта -->
+
+                <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+
+                    <h1 class="h2 m-0">
+                        Мой сайт
+                    </h1>
+
+                </div>
+
+                <!-- Главное меню -->
+
+                <nav class="col-12 col-md-6">
+
+                    <div class="d-flex flex-column flex-md-row justify-content-md-end align-items-center gap-2">
+
+                        <a href="#links"
+                           class="text-info text-decoration-none">
+                            Ссылка меню 1
+                        </a>
+
+                        <a href="#table"
+                           class="text-info text-decoration-none">
+                            Ссылка 2
+                        </a>
+
+                        <a href="#form"
+                           class="text-info text-decoration-none">
+                            Ссылка 3
+                        </a>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </div>
+        ```
+
+    </header>
+
+    <!-- Основной контент -->
+
+    <main class="container my-4">
+
+        ```
+        <h1 class="text-center mb-4">
+            Гиперссылки
+        </h1>
+
+
+        <!-- Список гиперссылок -->
+
+        <section id="links" class="row">
+
+            <div class="col-12">
+
+                <ul class="mb-4">
+
+                    <li class="mb-2">
+                        <a href="http://kubsu.ru">
+                            Главная страница kubsu.ru
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="https://kubsu.ru">
+                            Главная страница kubsu.ru HTTPS
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="https://kubsu.ru">
+
+                            <img src="doroga_razmetka_dal_167834_2560x1600.jpg"
+                                 width="100"
+                                 alt="КубГУ">
+
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="/about">
+                            Сокращённая ссылка на внутреннюю страницу
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="/">
+                            Сокращённая ссылка на главную страницу
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#form">
+                            Перейти к форме
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="https://kubsu.ru/?a=1&b=2&c=3">
+                            URL с тремя параметрами
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="https://kubsu.ru/?id=123">
+                            URL с параметром id
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="page.html">
+                            Страница в текущем каталоге
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="about/page.html">
+                            Страница в каталоге about
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="../page.html">
+                            Страница на уровень выше
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="../../page.html">
+                            Страница на два уровня выше
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+
+                        <p>
+                            Это обычный текст с
+                            <a href="https://kubsu.ru">
+                                контекстной ссылкой
+                            </a>
+                            внутри него.
+                        </p>
+
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="https://ru.wikipedia.org/wiki/HTML#История">
+                            Фрагмент страницы стороннего сайта
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+
+                        <img src="doroga_razmetka_dal_167834_2560x1600.jpg"
+                             width="300"
+                             height="150"
+                             usemap="#map"
+                             alt="Картинка">
+
+                        <map name="map">
+
+                            <area shape="rect"
+                                  coords="0,0,150,150"
+                                  href="https://kubsu.ru">
+
+                            <area shape="circle"
+                                  coords="225,75,50"
+                                  href="https://google.com">
+
+                        </map>
+
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="">
+                            Ссылка с пустым href
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a>
+                            Ссылка без href
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="https://kubsu.ru"
+                           rel="nofollow">
+                            Ссылка с nofollow
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="https://kubsu.ru"
+                           rel="noindex">
+                            Ссылка с noindex
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- Нумерованный список -->
+
+        <section class="row mb-4">
+
+            <div class="col-12 col-md-6">
+
+                <h2 class="h4 mb-3">
+                    Нумерованный список ссылок
+                </h2>
+
+                <ol>
+
+                    <li class="mb-2">
+                        <a href="https://kubsu.ru"
+                           title="Официальный сайт КубГУ">
+                            КубГУ
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="https://google.com"
+                           title="Поисковая система Google">
+                            Google
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="https://yandex.ru"
+                           title="Поисковая система Яндекс">
+                            Яндекс
+                        </a>
+                    </li>
+
+                </ol>
+
+            </div>
+
+        </section>
+
+
+        <!-- Таблица -->
+
+        <section id="table" class="row mb-4">
+
+            <div class="col-12">
+
+                <h2 class="h4 mb-3">
+                    Таблица
+                </h2>
+
+                <div class="table-responsive">
+
+                    <table class="table table-bordered table-striped table-dark text-center align-middle">
+
+                        <thead>
+
+                            <tr>
+                                <th>№</th>
+                                <th>Имя</th>
+                                <th>Фамилия</th>
+                                <th>Группа</th>
+                                <th>Оценка</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td>Иван</td>
+                                <td>Иванов</td>
+                                <td rowspan="2">ИН11</td>
+                                <td>5</td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Пётр</td>
+                                <td>Петров</td>
+                                <td>4</td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Анна</td>
+                                <td>Сидорова</td>
+                                <td>ИИ11</td>
+                                <td>5</td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>Мария</td>
+                                <td>Смирнова</td>
+                                <td>ФИ11</td>
+                                <td>4</td>
+                            </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td>Алексей</td>
+                                <td>Кузнецов</td>
+                                <td rowspan="2">ПИ11</td>
+                                <td>3</td>
+                            </tr>
+
+                            <tr>
+                                <td>6</td>
+                                <td>Дмитрий</td>
+                                <td>Волков</td>
+                                <td>5</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="4">
+                                    Средняя оценка
+                                </td>
+
+                                <td>4.3</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FTP -->
+
+        <section class="row mb-4">
+
+            <div class="col-12 col-md-6">
+
+                <h2 class="h4 mb-3">
+                    FTP
+                </h2>
+
+                <a href="ftp://user:password@example.com/file.txt">
+                    Ссылка на FTP
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Форма -->
+
+        <section id="form" class="row">
+
+            <div class="col-12 col-md-8 col-lg-6">
+
+                <h2 class="h4 mb-4">
+                    Форма
+                </h2>
+
+                <form action="/" method="POST">
+
+                    <!-- ФИО -->
+
+                    <div class="mb-3">
+
+                        <label for="fio"
+                               class="form-label">
+                            ФИО:
+                        </label>
+
+                        <input id="fio"
+                               name="fio"
+                               type="text"
+                               class="form-control"
+                               pattern="[А-Яа-яЁёA-Za-z\s]+"
+                               title="Введите только буквы и пробелы"
+                               required>
+
+                    </div>
+
+
+                    <!-- Телефон -->
+
+                    <div class="mb-3">
+
+                        <label for="phone"
+                               class="form-label">
+                            Телефон:
+                        </label>
+
+                        <input id="phone"
+                               name="phone"
+                               type="tel"
+                               class="form-control"
+                               pattern="[0-9]{11}"
+                               minlength="11"
+                               maxlength="11"
+                               inputmode="numeric"
+                               title="Введите номер телефона из 11 цифр"
+                               required>
+
+                    </div>
+
+
+                    <!-- E-mail -->
+
+                    <div class="mb-3">
+
+                        <label for="email"
+                               class="form-label">
+                            E-mail:
+                        </label>
+
+                        <input id="email"
+                               name="email"
+                               type="email"
+                               class="form-control"
+                               placeholder="Введите вашу почту"
+                               required>
+
+                    </div>
+
+
+                    <!-- Дата рождения -->
+
+                    <div class="mb-3">
+
+                        <label for="birthdate"
+                               class="form-label">
+                            Дата рождения:
+                        </label>
+
+                        <input id="birthdate"
+                               name="birthdate"
+                               type="date"
+                               class="form-control"
+                               min="1900-01-01"
+                               max="2026-09-25"
+                               required>
+
+                    </div>
+
+
+                    <!-- Пол -->
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Пол:
+                        </label>
+
+                        <div class="form-check">
+
+                            <input id="male"
+                                   type="radio"
+                                   name="gender"
+                                   value="male"
+                                   class="form-check-input"
+                                   required>
+
+                            <label for="male"
+                                   class="form-check-label">
+                                Мужской
+                            </label>
+
+                        </div>
+
+                        <div class="form-check">
+
+                            <input id="female"
+                                   type="radio"
+                                   name="gender"
+                                   value="female"
+                                   class="form-check-input">
+
+                            <label for="female"
+                                   class="form-check-label">
+                                Женский
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Любимый язык программирования -->
+
+                    <div class="mb-3">
+
+                        <label for="languages"
+                               class="form-label">
+                            Любимый язык программирования:
+                        </label>
+
+                        <select id="languages"
+                                name="languages[]"
+                                multiple
+                                class="form-select"
+                                required>
+
+                            <option value="Pascal">Pascal</option>
+                            <option value="C">C</option>
+                            <option value="C++">C++</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="PHP">PHP</option>
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                            <option value="Haskell">Haskell</option>
+                            <option value="Clojure">Clojure</option>
+                            <option value="Prolog">Prolog</option>
+                            <option value="Scala">Scala</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Биография -->
+
+                    <div class="mb-3">
+
+                        <label for="bio"
+                               class="form-label">
+                            Биография:
+                        </label>
+
+                        <textarea id="bio"
+                                  name="bio"
+                                  rows="5"
+                                  class="form-control"
+                                  required></textarea>
+
+                    </div>
+
+
+                    <!-- Согласие -->
+
+                    <div class="form-check mb-3">
+
+                        <input id="contract"
+                               type="checkbox"
+                               name="contract"
+                               class="form-check-input"
+                               required>
+
+                        <label for="contract"
+                               class="form-check-label">
+                            С контрактом ознакомлен(а)
+                        </label>
+
+                    </div>
+
+
+                    <!-- Кнопка -->
+
+                    <button type="submit"
+                            class="btn btn-primary">
+                        Сохранить
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+        ```
+
+    </main>
+
+    <!-- Подвал -->
+
+    <footer class="bg-dark text-white mt-5">
+
+        ```
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12 text-center py-4">
+                    © Сергей Синица
+                </div>
+
+            </div>
+
+        </div>
+        ```
+
+    </footer>
+
+    <!-- JavaScript Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
