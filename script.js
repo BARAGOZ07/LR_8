@@ -16,7 +16,7 @@ const submitButton = form.querySelector(".submit-button");
 
 // Адрес Formcarry
 
-const FORM_URL = "fzf0vXdf4fK";
+const FORM_URL = "https://formcarry.com/s/fzf0vXdf4fK";
 
 
 // Ключ LocalStorage
