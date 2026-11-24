@@ -208,36 +208,34 @@ form.addEventListener("submit", async function(event) {
 
     }
 
-    // Проверка ФИО
+// Проверка ФИО: ровно три слова
 const fullname = form.elements.fullname.value.trim();
 
-if (!/^[А-Яа-яЁёA-Za-z\s-]+$/.test(fullname)) {
-    statusMessage.textContent = "ФИО должно содержать только буквы.";
+if (!/^[А-Яа-яЁёA-Za-z]+ [А-Яа-яЁёA-Za-z]+ [А-Яа-яЁёA-Za-z]+$/.test(fullname)) {
+    statusMessage.textContent = "Введите ФИО полностью: фамилию, имя и отчество.";
     return;
 }
 
-// Проверка телефона
+// Проверка телефона: 11 цифр, первая цифра 7
 const phone = form.elements.phone.value.trim();
-const phoneDigits = phone.replace(/\D/g, "");
 
-if (phoneDigits.length < 6 || phoneDigits.length > 15) {
-    statusMessage.textContent = "Телефон должен содержать от 6 до 15 цифр.";
+if (!/^7\d{10}$/.test(phone)) {
+    statusMessage.textContent = "Телефон должен содержать ровно 11 цифр и начинаться с 7.";
     return;
 }
 
+// Проверка Email: окончание .ru, .com или .mail
+const email = form.elements.email.value.trim();
+
+if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(ru|com|mail)$/i.test(email)) {
+    statusMessage.textContent = "Email должен заканчиваться на .ru, .com или .mail.";
+    return;
+}
 // Проверка организации
 const organization = form.elements.organization.value.trim();
 
 if (!/[А-Яа-яЁёA-Za-z]/.test(organization)) {
     statusMessage.textContent = "Название организации должно содержать хотя бы одну букву.";
-    return;
-}
-
-// Проверка email
-const email = form.elements.email.value.trim();
-
-if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    statusMessage.textContent = "Введите корректный адрес электронной почты.";
     return;
 }
 
