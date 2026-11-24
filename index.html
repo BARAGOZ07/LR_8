@@ -52,6 +52,14 @@
     title="ФИО должно содержать только буквы, пробелы и дефисы"
 >
 
+<!-- ФИО -->
+<input
+    type="text"
+    name="fullname"
+    placeholder="ФИО"
+    required
+>
+
 <!-- Email -->
 <input
     type="email"
@@ -66,8 +74,7 @@
     name="phone"
     placeholder="Телефон"
     required
-    pattern="[+]?[0-9\s()\-]{6,20}"
-    title="Введите телефон, содержащий от 6 до 20 символов"
+    maxlength="11"
 >
 
 <!-- Организация -->
