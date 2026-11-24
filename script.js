@@ -1,4 +1,4 @@
-```javascript
+javascript
 // Получаем элементы страницы
 
 const openButton = document.getElementById("openFeedback");
@@ -307,4 +307,3 @@ form.addEventListener("submit", async function(event) {
     }
 
 });
-```
