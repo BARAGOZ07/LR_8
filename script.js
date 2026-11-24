@@ -260,7 +260,7 @@ form.addEventListener("submit", async function(event) {
 
         // Проверка ответа сервера
 
-        if (!response.ok) {
+        if (!response.ok || result.code !== 200) {
 
             throw new Error("Ошибка отправки");
 
