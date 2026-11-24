@@ -1,6 +1,3 @@
-javascript
-// Получаем элементы страницы
-
 const openButton = document.getElementById("openFeedback");
 
 const closeButton = document.getElementById("closeFeedback");
@@ -305,5 +302,4 @@ form.addEventListener("submit", async function(event) {
         submitButton.textContent = "Отправить";
 
     }
-
 });
