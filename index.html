@@ -11,8 +11,7 @@
 <body>
 
     <header>
-        <h1>Мой сайт</h1>
-        <p>Добро пожаловать!</p>
+        <h1>Добро пожаловать!</h1>
     </header>
 
     <main>
@@ -43,41 +42,41 @@
 
                     <div class="form-group">
                         <label for="fullname">ФИО</label>
-                        <input
-                            type="text"
-                            id="fullname"
-                            name="fullname"
-                            placeholder="Введите ФИО"
-                            required>
-                    </div>
+                        <!-- ФИО -->
+<input
+    type="text"
+    name="fullname"
+    placeholder="ФИО"
+    required
+    pattern="[А-Яа-яЁёA-Za-z\s-]+"
+    title="ФИО должно содержать только буквы, пробелы и дефисы"
+>
 
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="example@mail.com"
-                            required>
-                    </div>
+<!-- Email -->
+<input
+    type="email"
+    name="email"
+    placeholder="Email"
+    required
+>
 
-                    <div class="form-group">
-                        <label for="phone">Телефон</label>
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="+7 (999) 123-45-67"
-                            required>
-                    </div>
+<!-- Телефон -->
+<input
+    type="tel"
+    name="phone"
+    placeholder="Телефон"
+    required
+    pattern="[+]?[0-9\s()\-]{6,20}"
+    title="Введите телефон, содержащий от 6 до 20 символов"
+>
 
-                    <div class="form-group">
-                        <label for="organization">Организация</label>
-                        <input
-                            type="text"
-                            id="organization"
-                            name="organization"
-                            placeholder="Название организации">
+<!-- Организация -->
+<input
+    type="text"
+    name="organization"
+    placeholder="Организация"
+    required
+>
                     </div>
 
                 </div>
