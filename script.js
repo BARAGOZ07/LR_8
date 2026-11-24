@@ -208,6 +208,38 @@ form.addEventListener("submit", async function(event) {
 
     }
 
+    // Проверка ФИО
+const fullname = form.elements.fullname.value.trim();
+
+if (!/^[А-Яа-яЁёA-Za-z\s-]+$/.test(fullname)) {
+    statusMessage.textContent = "ФИО должно содержать только буквы.";
+    return;
+}
+
+// Проверка телефона
+const phone = form.elements.phone.value.trim();
+const phoneDigits = phone.replace(/\D/g, "");
+
+if (phoneDigits.length < 6 || phoneDigits.length > 15) {
+    statusMessage.textContent = "Телефон должен содержать от 6 до 15 цифр.";
+    return;
+}
+
+// Проверка организации
+const organization = form.elements.organization.value.trim();
+
+if (!/[А-Яа-яЁёA-Za-z]/.test(organization)) {
+    statusMessage.textContent = "Название организации должно содержать хотя бы одну букву.";
+    return;
+}
+
+// Проверка email
+const email = form.elements.email.value.trim();
+
+if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    statusMessage.textContent = "Введите корректный адрес электронной почты.";
+    return;
+}
 
     // Проверка адреса сервера
 
